@@ -32,12 +32,14 @@ def style_background_dashboard():
 def style_base_layout():
     st.markdown("""
             <style>
-                   @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+                /*@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');*/
+                @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
                    
 
                     /* Hide top Bar Of Streamlit */
                     #MainMenu,footer,header{
-                    /*visibility:hidden;*/
+                    visibility:hidden;
                     }
 
                     .block-container{
@@ -46,16 +48,15 @@ def style_base_layout():
 
                     h1{ 
                         font-family:'Climate Crisis',sans-serif  !important;
-                        font-size :3.5rem !important;
-                        line-height :0.9 !important;
-                        margin-bottom : 0rem !important;
-                        
+                        font-size: 3.5rem !important;
+                        line-height: 1.1 !important;
+                        margin-bottom : 0rem !important;    
                     }
 
                     h2{ 
                         font-family:'Climate Crisis',sans-serif  !important;
-                        font-size :3.5rem !important;
-                        line-height :1.1 !important;
+                        font-size: 2rem !important;
+                        line-height: 0.9 !important;
                         margin-bottom : 0rem !important;   
                     }
 
@@ -68,7 +69,7 @@ def style_base_layout():
                     background :#5865F2 !important;
                     color:white !important;
                     padding :10px 20px !important;
-                    border : nonw !important;
+                    border : none !important;
                     transition : transform 0.25s ease-in-out !important;
                     
                     }
@@ -83,12 +84,16 @@ def style_base_layout():
                                          
                     button[kind="tertiary"]{
                     border-radius:1.5rem !important;
-                    background :black !important
+                    background :black !important;
                     color:white !important;
                     padding :10px 20px !important;
                     border : nonw !important;
                     transition : transform 0.25s ease-in-out !important;
                                                             
+                    }
+
+                    button:hover {
+                        transform: scale(1.05);
                     }
 
 

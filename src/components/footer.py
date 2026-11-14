@@ -7,11 +7,17 @@ def footer_home():
     <div style="margin-top:2rem; display:flex; justify-content:center; align-items:center;">
     <p style="font-weight:bold; color:white">Created by Priyanka</p>
     </div>
-    
-      
-
       """,unsafe_allow_html=True
     )
 
+
+def footer_dashboard():
+
+    st.markdown(f"""
+    <div style="margin-top:2rem; display:flex; justify-content:center; align-items:center;">
+    <p style="font-weight:bold; color:black">Created by Priyanka</p>
+    </div>
+      """,unsafe_allow_html=True
+    )
    
 
